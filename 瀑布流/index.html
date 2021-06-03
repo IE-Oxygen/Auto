@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>waterfall</title>
+    <link rel="stylesheet" href="waterfall.css">
+</head>
+
+<body>
+    <div class="waterfall">
+        <div><img src="Image/1.jpg"></div>
+        <div><img src="Image/2.jpg"></div>
+        <div><img src="Image/3.jpg"></div>
+        <div><img src="Image/4.jpg"></div>
+        <div><img src="Image/5.jpg"></div>
+        <div><img src="Image/6.jpg"></div>
+        <div><img src="Image/7.jpg"></div>
+        <div><img src="Image/8.jpg"></div>
+    </div>
+</body>
+<script src="waterfall.js"></script>
+<script type="text/javascript">
+    var a = new Waterfall(
+        {
+            waterfalltype: 'waterfall'
+        },
+        {
+            colunm: 2,
+            gap: 20,
+            width: 220
+        }
+    );
+    window.onload = function () {
+        a.init();
+    }
+</script>
+
+</html>

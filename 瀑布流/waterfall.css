@@ -1,0 +1,22 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0 auto;
+}
+.waterfall{
+    position: relative;
+    border: 2px solid #ddd;
+    margin-block: 10px;
+    display:block;
+}
+.waterfall div{
+    position: absolute;
+    /* width: 220px; */
+    word-wrap: break-word;
+    word-break: break-all;
+}
+.waterfall div img{
+    /* width: 220px; */
+    display: block;
+}

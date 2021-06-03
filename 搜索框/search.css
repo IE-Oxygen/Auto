@@ -1,0 +1,44 @@
+*{
+    box-sizing: border-box;
+    
+}
+body{
+    margin: 0 auto;
+}
+.box{
+    display: flex;
+    justify-content: center;
+}
+.search{
+    width: 95%;
+    border: 2px solid rgba(128, 128, 128, 0.5);
+    border-radius: 15px;
+    margin-top: 20px;
+    position: relative;
+    height: 35px;
+}
+.search input{
+    outline: none;
+    border:none;
+    position: absolute;
+    left: 10px;
+    top: 20%;
+    width: calc(100% - 25px);
+}
+
+.search .sss{
+    position: absolute;
+     width: 15px;
+     height: 15px;
+    right: 10px;
+    top: 20%;
+    color: rgba(128, 128, 128, 1);
+    cursor: pointer;
+}
+::-webkit-input-placeholder{
+    color:   rgba(128, 128, 128, 0.5);
+    font-size: 1.2em;
+}
+input::-webkit-search-cancel-button{
+    display: none;
+ }
