@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>拖拽框</title>
+  <link rel="stylesheet" href="拖拽框.css">
+</head>
+<body>
+  <div class="login-header"><a id="link" href="javascript:;">点击打开登录界面</a></div>
+    <div id="login" class="login">
+      <div id="title" class="title">登录会员      
+      <span><a id="closeBtn" class="closeBtn" href="javascript:;">x</a></span>
+      </div>
+      <div id="login-content" class="login-content">
+        <div class="login-input">
+          <label for="username">用户名：</label>
+          <input type="text" id="username" class="username" placeholder="用户账号">
+        </div>
+        <div class="login-input">
+          <label for="password">登录密码：</label>
+          <input type="password" id="password" class="password" placeholder="输入密码">
+        </div>
+      </div>        
+      <a id="login-button-submit" class="loginBtn" href="javascript:;">登录会员</a>
+    </div>
+  <div id="bg" class="bg"></div>
+</body>
+<script src="拖拽框.js"></script>
+</html>
