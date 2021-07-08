@@ -1,0 +1,72 @@
+body{
+  background-image: linear-gradient(to left,
+            #9c88ff,#3cadeb);
+  /* margin: 80px auto;
+  width: 1100px; */
+  display: flex;
+  justify-content: center;
+}
+.total{
+  position:relative;
+  top: 80px;
+  width: 1100px;
+  height: 550px;
+  display: flex;
+  box-shadow: 0 5px 15px rgba(0,0,0,.8);
+}
+.photo{
+  width: 800px;
+  height: 550px;
+  background-image:url(xjq.jpg);
+  background-size: cover;
+}
+.loginPart{
+  width: 300px;
+  height: 550px;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.loginContent{
+  position:relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 500px;
+}
+.loginContent h1{
+  font: 900 40px '';
+  text-align: center;
+  margin-block: 0px;
+}
+.userNanme, .passWorld{
+  width: 230px;
+  outline: none;
+  border: 0;
+  padding: 10px;
+  border-bottom: 3px solid rgb(80,80,170);
+  font: 900 20px '';
+}
+.forget{
+  display: block;
+  margin-top: 10px;
+  font: 900 10px '';
+  color: black;
+}
+.loginButton{
+  margin: 25px auto;
+  display: block;
+  width: 180px;
+  height:60px;
+  font: 900 25px '';
+  text-align: center;
+  line-height: 55px;
+  background-image: linear-gradient(to left,
+  #9c88ff,#3cadeb);;
+  border-radius: 30px;
+  text-decoration: none;
+}
+.a{
+  height: 100px;
+}

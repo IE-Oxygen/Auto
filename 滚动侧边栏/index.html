@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+  .slider{
+    position: absolute;
+    top: 300px;
+    left: 50%;
+    margin-left: 600px;
+    width: 50px;
+    height: 150px;
+    background-color: pink;
+  }
+  .text{
+    display: none;
+    position: relative;
+    top: 50%;
+    transform: translate(0,-50%);
+  }
+  .w{
+    width: 1200px;
+    margin: 10px auto;
+    text-align: center;
+  }
+  .header{
+    height: 150px;
+    background-color: paleturquoise;
+  }
+  .banner{
+    height: 300px;
+    background-color: green;
+  }
+  .content{
+    height: 1000px;
+    background-color: rebeccapurple;
+  }
+
+</style>
+<body>
+  <div class="slider">
+    <span class="text">Hello World</span>
+  </div>
+  <div class="header w">header</div>
+  <div class="banner w">banner</div>
+  <div class="content w">content</div>
+  
+</body>
+<script>
+  let slider = document.getElementsByClassName('slider')[0];
+  let banner = document.getElementsByClassName('banner')[0];
+  let content = document.getElementsByClassName('content')[0];
+  let text = document.getElementsByClassName('text')[0];
+  let bannerTop = banner.offsetTop;
+  let sliderBeginTop = slider.offsetTop;
+  let sliderTop = sliderBeginTop - bannerTop;
+  let contentTop = content.offsetTop;
+  document.addEventListener('scroll',function(){
+    if(window.pageYOffset > bannerTop){
+      slider.style.position = 'fixed';
+      slider.style.top =  sliderTop + 'px';
+      console.log(sliderTop);
+    }
+    else{
+      slider.style.position = 'absolute';
+      slider.style.top =  sliderBeginTop + 'px';
+
+    }
+    if(window.pageYOffset > contentTop){
+      text.style.display = 'block';
+    }
+    else{
+      text.style.display = 'none';
+
+    }
+  })
+</script>
+</html>
