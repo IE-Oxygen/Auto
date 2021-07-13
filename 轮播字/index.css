@@ -1,0 +1,50 @@
+body{
+  display: flex;
+  justify-content: center;
+  align-items:flex-start;
+  min-height: 100vh;
+  margin: 0;
+  background-color: antiquewhite;
+}
+h2{
+  width: 80%;
+  font-size: 50px;
+  letter-spacing: -0.02em;
+  line-height: 1.06;
+}
+.mask{
+  position: relative;
+  height: 50px;
+  /* border: 1px solid red; */
+  overflow: hidden;
+  padding-top: 6px;
+}
+.mask span{
+  display: block;
+  position: absolute;
+  top: 100%;
+  padding-bottom: 6px;
+}
+.mask span a{
+  text-decoration: none;
+}
+.mask span[data-show] {
+  transform: translateY(-100%);
+  transition: all .5s ease-in-out;
+}
+.mask span[data-up]{
+  transform: translateY(-200%);
+  transition: all .5s ease-in-out;
+}
+.mask span:nth-child(1) a{
+  color: rgb(116, 116, 116);
+}
+.mask span:nth-child(2) a{
+  color: rgb(0, 105, 70);
+}
+.mask span:nth-child(3) a{
+  color: brown;
+}
+.mask span:nth-child(4) a{
+  color: burlywood;
+}
